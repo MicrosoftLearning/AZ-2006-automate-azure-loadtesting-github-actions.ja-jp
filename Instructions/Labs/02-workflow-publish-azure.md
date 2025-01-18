@@ -6,7 +6,7 @@ lab:
 
 # 概要
 
-このラボでは、Web アプリを Azure App Service にデプロイする GitHub Actions ワークフローを実装する方法を学習します。
+このラボでは、Web アプリを Azure App Service にデプロイする GitHub アクション ワークフローを実装する方法を学習します。
 
 このラボを完了すると、次のことができるようになります。
 
