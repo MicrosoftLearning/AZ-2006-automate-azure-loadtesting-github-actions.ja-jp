@@ -97,7 +97,7 @@ lab:
     ```
     rgId=$(az group show -n az2006-rg --query "id" -o tsv)
 
-    az ad sp create-for-rbac --name GH-Action-eshoponweb --role contributor --scopes $rgId
+    az ad sp create-for-rbac --name GH-Action-eshoponweb --role contributor --scopes $rgId --json-auth true
     ```
 
     >**重要:** このコマンドは、Microsoft Entra ID (サービス プリンシパル) の名前で Azure に対する認証に使用される識別子が含まれる JSON オブジェクトを出力します。 次の手順で使用するために、JSON オブジェクトをコピーします。 
