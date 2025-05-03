@@ -1,26 +1,14 @@
 ---
-title: オンラインでホストされる手順
+title: GitHub Actions を使用して Azure Load Testing を自動化する
 permalink: index.html
 layout: home
 ---
 
-# コンテンツ ディレクトリ
+次の演習は、Azure Load Testing を使用してロード テストの実行を自動化する GitHub Actions とワークフローを実装する実践的な学習エクスペリエンスを提供するように設計されています。 
 
-次のセクションには、各ラボ演習へのハイパーリンクが含まれています。
+## 演習
+<hr/>
 
-## ラボ
 
-{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
-| モジュール | ラボ |
-| --- | --- | 
-{% for activity in labs %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %}
-
-<!-- ## Demos
-
-{% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| Module | Demo |
-| --- | --- | 
-{% for activity in demos  %}| {{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %}
- -->
+{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %} {% for activity in labs  %}
+* [{{ activity.lab.title }}]({{ site.github.url }}{{ activity.url }}) <br/> {{ activity.lab.description }} {% endfor %}
